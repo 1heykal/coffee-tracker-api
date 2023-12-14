@@ -34,11 +34,11 @@ To get started with the Coffee Tracker API, follow these steps:
 
 ## API Endpoints
 
-- **GET /api/records**: Get all coffee consumption records.
-- **GET /api/records/{id}**: Get a specific coffee consumption record by ID.
-- **POST /api/records**: Create a new coffee consumption record.
-- **PUT /api/records/{id}**: Update a coffee consumption record.
-- **DELETE /api/records/{id}**: Delete a coffee consumption record.
+- **GET /records**: Get all coffee consumption records.
+- **GET /records/{id}**: Get a specific coffee consumption record by ID.
+- **POST /records**: Create a new coffee consumption record.
+- **PUT /records/{id}**: Update a coffee consumption record.
+- **DELETE /records/{id}**: Delete a coffee consumption record.
 
 ## Configuration
 

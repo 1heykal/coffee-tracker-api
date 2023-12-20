@@ -13,7 +13,9 @@ namespace CoffeeTrackerApi.Models
         public string Type { get; set; }
 
         [DataType(DataType.DateTime)]
-        public DateTime ConsumingnDate { get; set; }
+        public DateTime ConsumingDate { get; set; }
+
+        public decimal Cost { get; set; }
 
 
     }

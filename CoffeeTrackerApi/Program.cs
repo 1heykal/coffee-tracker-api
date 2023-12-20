@@ -1,6 +1,7 @@
 using CoffeeTrackerApi.Models;
 using CoffeeTrackerApi.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,18 @@ builder.Services.AddDbContext<ApplicationDbContext>
 
 builder.Services.AddScoped<IRepository<Record>, RecordRepository>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin()
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
+
+//builder.Services.AddHttpsRedirection(options =>  options.HttpsPort = 7089);
+
 
 
 var app = builder.Build();
@@ -30,7 +43,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors();
 
 app.UseAuthorization();
 

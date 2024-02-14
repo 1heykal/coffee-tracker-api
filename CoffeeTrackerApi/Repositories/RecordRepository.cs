@@ -5,9 +5,9 @@ namespace CoffeeTrackerApi.Repositories
     public class RecordRepository : IRepository<Record>
     {
         ApplicationDbContext dbContext;
-        public RecordRepository() 
+        public RecordRepository(ApplicationDbContext context)
         {
-            dbContext = new();
+            dbContext = context;
         }
 
         public void Add(Record entity)
@@ -29,11 +29,11 @@ namespace CoffeeTrackerApi.Repositories
         public Record? Get(int id) => dbContext.Records.FirstOrDefault<Record>(r => r.Id == id);
 
         public IEnumerable<Record> GetAll() => dbContext.Records.ToList();
-       
+
 
         public void Update(Record entity)
         {
-            var record = dbContext.Records.FirstOrDefault(r => r.Id == entity.Id);
+            var record = Get(entity.Id);
             if (record is null)
                 return;
 

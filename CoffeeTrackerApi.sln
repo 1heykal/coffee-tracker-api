@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeTrackerApi", "CoffeeTrackerApi\CoffeeTrackerApi.csproj", "{0B0D3691-1CBE-4311-A638-A268218F395E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeTrackerApi", "CoffeeTrackerApi\CoffeeTrackerApi.csproj", "{0B0D3691-1CBE-4311-A638-A268218F395E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeTrackerApi.Test", "CoffeeTrackerApi.Test\CoffeeTrackerApi.Test.csproj", "{ED3A189C-AD4F-4003-8187-BA29DFBB2D3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0B0D3691-1CBE-4311-A638-A268218F395E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B0D3691-1CBE-4311-A638-A268218F395E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B0D3691-1CBE-4311-A638-A268218F395E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED3A189C-AD4F-4003-8187-BA29DFBB2D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3A189C-AD4F-4003-8187-BA29DFBB2D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED3A189C-AD4F-4003-8187-BA29DFBB2D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED3A189C-AD4F-4003-8187-BA29DFBB2D3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

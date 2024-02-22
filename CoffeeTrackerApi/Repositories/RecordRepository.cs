@@ -1,4 +1,5 @@
 ﻿using CoffeeTrackerApi.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CoffeeTrackerApi.Repositories
 {
@@ -10,28 +11,28 @@ namespace CoffeeTrackerApi.Repositories
             dbContext = context;
         }
 
-        public void Add(Record entity)
+        public async Task Add(Record entity)
         {
-            dbContext.Records.Add(entity);
-            dbContext.SaveChanges();
+            await dbContext.Records.AddAsync(entity);
+            await dbContext.SaveChangesAsync();
         }
 
-        public void Delete(int id)
+        public async Task Delete(int id)
         {
-            var record = Get(id);
+            var record = await Get(id);
             if (record is null)
                 return;
 
             dbContext.Records.Remove(record);
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync();
         }
 
-        public Record? Get(int id) => dbContext.Records.FirstOrDefault<Record>(r => r.Id == id);
+        public async Task<Record?> Get(int id) => await dbContext.Records.FirstOrDefaultAsync<Record>(r => r.Id == id);
 
-        public IEnumerable<Record> GetAll() => dbContext.Records.ToList();
+        public async Task<IEnumerable<Record>> GetAll() => await dbContext.Records.ToListAsync();
 
 
-        public void Update(Record entity)
+        public async Task Update(Record entity)
         {
             var record = Get(entity.Id);
             if (record is null)
@@ -39,7 +40,7 @@ namespace CoffeeTrackerApi.Repositories
 
             ApplicationDbContext db = new();
             db.Records.Update(entity);
-            db.SaveChanges();
+            await db.SaveChangesAsync();
 
         }
     }

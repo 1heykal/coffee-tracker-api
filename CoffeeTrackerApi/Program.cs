@@ -17,6 +17,8 @@ var sqlServerConnectionString = builder.Configuration.GetConnectionString("SqlSe
 builder.Services.AddDbContext<ApplicationDbContext>
 (optionBuilder => optionBuilder.UseSqlServer(sqlServerConnectionString));
 
+builder.Services.AddMemoryCache();
+
 builder.Services.AddScoped<IRepository<Record>, RecordRepository>();
 
 builder.Services.AddCors(options =>

@@ -1,5 +1,6 @@
 ﻿using CoffeeTrackerApi.Models;
 using CoffeeTrackerApi.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 
@@ -7,6 +8,7 @@ namespace CoffeeTrackerApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class RecordController : ControllerBase
     {
         private readonly IRepository<Record> db;

@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Data;
+﻿using CoffeeTrackerApi.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
-namespace CoffeeTrackerApi.Models
+namespace CoffeeTrackerApi.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public virtual DbSet<Record> Records {  get; set; }
+        public virtual DbSet<Record> Records { get; set; }
 
         public ApplicationDbContext() : base() { }
 

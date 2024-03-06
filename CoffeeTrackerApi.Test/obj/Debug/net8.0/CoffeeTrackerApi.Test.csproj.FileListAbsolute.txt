@@ -150,3 +150,9 @@ E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi.Test\obj\Debug\net8.0\Coffee
 E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi.Test\obj\Debug\net8.0\CoffeeTrackerApi.Test.genruntimeconfig.cache
 E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi.Test\obj\Debug\net8.0\ref\CoffeeTrackerApi.Test.dll
 E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi.Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi.Test\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi.Test\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi.Test\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi.Test\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi.Test\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi.Test\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

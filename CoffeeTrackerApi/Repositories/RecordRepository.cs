@@ -1,4 +1,5 @@
-﻿using CoffeeTrackerApi.Models;
+﻿using CoffeeTrackerApi.Data;
+using CoffeeTrackerApi.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CoffeeTrackerApi.Repositories

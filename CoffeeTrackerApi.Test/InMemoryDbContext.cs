@@ -1,4 +1,4 @@
-﻿using CoffeeTrackerApi.Models;
+﻿using CoffeeTrackerApi.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

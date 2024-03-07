@@ -143,3 +143,6 @@ E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi\bin\Debug\net8.0\Microsoft.A
 E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi\bin\Debug\net8.0\MailKit.dll
+E:\Development\c#\CoffeeTrackerApi\CoffeeTrackerApi\bin\Debug\net8.0\MimeKit.dll

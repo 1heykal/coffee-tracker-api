@@ -1,6 +1,7 @@
 using CoffeeTrackerApi.Data;
 using CoffeeTrackerApi.Models;
 using CoffeeTrackerApi.Repositories;
+using CoffeeTrackerApi.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,7 +22,9 @@ builder.Services.Configure<IdentityOptions>(options =>
 {
     options.SignIn.RequireConfirmedEmail = true;
 });
-builder.Services.AddTransient<IEmailSender, EmailSender>();
+builder.Services.AddOptions<EmailSettings>().BindConfiguration(nameof(EmailSettings));
+
+builder.Services.AddSingleton<EmailService>();
 
 var sqlServerConnectionString = builder.Configuration.GetConnectionString("SqlServer");
 
